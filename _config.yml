@@ -1,4 +1,4 @@
-title: Brian Ramos - Staff Software Engineer
+title: Brian Ramos
 description: A simple beachhead of a site. I probably won't post much but maybe I will!
 about-author: Well seasoned infrastructure engineer with a penchant for overkill
 author: Brian Ramos
@@ -8,6 +8,11 @@ url: brian-ramos.com
 social-twitter: bramos
 social-github: brirams
 social-linkedin: brian-ramos-6ba41713
-remote_theme: artemsheludko/flexible-jekyll
+remote_theme: brirams/grayscale-theme
+
+grayscale-theme:
+  first-name: Brian
+  last-name: Ramos
+
 plugins:
   - jekyll-remote-theme

@@ -1,1 +1,13 @@
-theme: jekyll-theme-midnight
+title: Brian Ramos - Staff Software Engineer
+description: A simple beachhead of a site. I probably won't post much but maybe I will!
+about-author: Well seasoned infrastructure engineer with a penchant for overkill
+author: Brian Ramos
+author-img: headshot-min.png
+url: brian-ramos.com
+
+social-twitter: bramos
+social-github: brirams
+social-linkedin: brian-ramos-6ba41713
+remote_theme: artemsheludko/flexible-jekyll
+plugins:
+  - jekyll-remote-theme

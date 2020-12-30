@@ -1,8 +1,6 @@
-title: Brian Ramos
-description: A simple beachhead of a site. I probably won't post much but maybe I will!
-about-author: Well seasoned infrastructure engineer with a penchant for overkill
+title: Under construction
+description: If you're seeing this message, you've caught me in the middle of building out a new version of this site
 author: Brian Ramos
-author-img: headshot-min.png
 url: brian-ramos.com
 
 social-twitter: bramos
@@ -13,6 +11,19 @@ remote_theme: brirams/grayscale-theme
 grayscale-theme:
   first-name: Brian
   last-name: Ramos
+
+social:
+    - title: twitter
+      url: https://twitter.com/bramos
+    - title: github
+      url: https://github.com/brirams
+    - title: linkedin
+      url: https://www.linkedin.com/in/brian-ramos-6ba41713/
+color:
+    primary-dark: '#000000'
+    links: '#219ab3'
+
+footer: Brian Ramos
 
 plugins:
   - jekyll-remote-theme

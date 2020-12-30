@@ -1,16 +1,9 @@
-title: Under construction
-description: If you're seeing this message, you've caught me in the middle of building out a new version of this site
+title: Brian Ramos
+description: Computers and things
 author: Brian Ramos
 url: brian-ramos.com
 
-social-twitter: bramos
-social-github: brirams
-social-linkedin: brian-ramos-6ba41713
 remote_theme: brirams/grayscale-theme
-
-grayscale-theme:
-  first-name: Brian
-  last-name: Ramos
 
 social:
     - title: twitter

@@ -16,7 +16,7 @@ color:
     primary-dark: '#000000'
     links: '#219ab3'
 
-footer: Brian Ramos
+footer: Brian Ramos 
 
 plugins:
   - jekyll-remote-theme

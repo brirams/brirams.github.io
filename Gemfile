@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
-
-group :jekyll_plugins do
-  gem 'jekyll-sitemap'
-  gem 'jekyll-seo-tag'
-  gem "jekyll-remote-theme"
-end
+# Use the github-pages gem so local builds match GitHub Pages exactly
+# (it pins the Jekyll version and the full plugin set that GitHub Pages
+# runs, including jekyll-sitemap, jekyll-seo-tag, and jekyll-remote-theme).
+# Do NOT list those plugins separately — that lets Bundler resolve
+# conflicting versions and breaks the build.
+gem 'github-pages', group: :jekyll_plugins

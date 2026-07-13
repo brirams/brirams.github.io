@@ -1,0 +1,19 @@
+services:
+  site:
+    build: .
+    # Use host networking instead of a user-defined bridge.
+    # With ufw active and br_netfilter not loaded, outbound traffic from
+    # Docker's user-defined bridge networks (the default for compose) is
+    # dropped by the FORWARD chain, which breaks remote_theme's download
+    # from codeload.github.com. Host networking sidesteps that entirely.
+    # (The site is still reachable at http://localhost:4000.)
+    network_mode: host
+    # No `ports:` needed with host networking; 4000 (site) and 35729
+    # (livereload) are exposed directly on the host.
+    volumes:
+      # Bind-mount the source for live editing.
+      - .:/srv/jekyll
+      # Keep the image's baked-in gems from being shadowed by the
+      # bind mount above.
+      - /srv/jekyll/vendor/bundle
+    # Uses the CMD from the Dockerfile (jekyll serve --livereload ...).

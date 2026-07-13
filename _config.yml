@@ -6,12 +6,14 @@ url: brian-ramos.com
 remote_theme: brirams/grayscale-theme
 
 social:
-    - title: x
-      url: https://x.com/bramos
     - title: github
       url: https://github.com/brirams
     - title: linkedin
       url: https://www.linkedin.com/in/brian-ramos-6ba41713/
+    - title: bluesky
+      url: https://bsky.app/profile/bramos.bsky.social
+    - title: x
+      url: https://x.com/bramos
 color:
     primary-dark: '#000000'
     links: '#219ab3'
@@ -20,3 +22,16 @@ footer: Brian Ramos
 
 plugins:
   - jekyll-remote-theme
+
+# Keep editor artifacts and non-site files out of the build. Emacs lock
+# files (.#*) are dangling symlinks that otherwise crash the Jekyll build.
+exclude:
+  - "*.org"
+  - "*.org~"
+  - "#*#"
+  - ".#*"
+  - Gemfile
+  - Gemfile.lock
+  - Dockerfile
+  - docker-compose.yml
+  - vendor
